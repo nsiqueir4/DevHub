@@ -1,0 +1,82 @@
+
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    left: 0;
+    box-sizing: border-box;
+    margin-top: 90px;
+}
+nav {
+    position: fixed; /* Para fixar a barra no topo */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px; /* Ajuste a altura conforme necessário */
+    background-color: #fff; /* Cor de fundo da navegação */
+    color: white; /* Cor do texto */
+    display: flex;
+    align-items: center; /* Alinhamento vertical do conteúdo */
+    justify-content: space-between; /* Distribui itens com espaço entre eles */
+    padding: 0 20px; /* Espaçamento interno */
+    z-index: 1000; /* Mantém a barra acima de outros elementos */
+    box-shadow: 0px 1px 1px #c0c0c0;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+nav li {
+    list-style: none;
+    display: inline-flex;
+    padding: 20px;
+}
+
+nav a {
+    color: black;
+    transition: 0.4s ease;
+}
+
+nav a:hover {
+    color: #FCA311;
+    text-decoration: underline;
+}
+
+nav button {
+    background-color: transparent;
+    border-color: #14213d;
+    border-radius: 5px;
+    display: block;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    transition: 0.4s ease;
+}
+
+nav button:hover {
+    transform: scale(1.05);
+    color: #FCA311;
+    cursor: pointer;
+}
+
+.container_button {
+    text-decoration: none;
+}
+
+.container_button:hover {
+    text-decoration: none;
+}
+
+.img-programacao {
+    width: 100%;
+    height: auto
+}
