@@ -1,11 +1,16 @@
 
 
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Poppins";
     left: 0;
     box-sizing: border-box;
     margin-top: 90px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     position: fixed; /* Para fixar a barra no topo */
     top: 0;
@@ -20,19 +25,7 @@ nav {
     padding: 0 20px; /* Espaçamento interno */
     z-index: 1000; /* Mantém a barra acima de outros elementos */
     box-shadow: 0px 1px 1px #c0c0c0;
-    overflow: hidden;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav button {
-        width: 100%;
-        margin-top: 10px;
-    }
+    overflow: hidden;   
 }
 
 nav li {
@@ -42,13 +35,15 @@ nav li {
 }
 
 nav a {
+    text-decoration: none;
+    display: inline-flex;
+    padding: 20px;
     color: black;
     transition: 0.4s ease;
 }
 
 nav a:hover {
-    color: #FCA311;
-    text-decoration: underline;
+    color: #00A8E8;
 }
 
 nav button {
@@ -64,7 +59,7 @@ nav button {
 
 nav button:hover {
     transform: scale(1.05);
-    color: #FCA311;
+    color: #00A8E8;
     cursor: pointer;
 }
 
@@ -79,4 +74,55 @@ nav button:hover {
 .img-programacao {
     width: 100%;
     height: auto
+}
+
+.slogan {
+    margin-left: 50px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan h1 {
+    font-size: 60px;
+    width: 600px;
+}
+.slogan p {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 600px;
+}
+
+.sobre {
+    margin-top: 80px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre h1 {
+    font-size: 60px;
+}
+
+.sobre p {
+width: 900px;
+}
+
+footer {
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #c0c0c0;
+    height: 50px;
+}
+
+footer p {
+    
 }
